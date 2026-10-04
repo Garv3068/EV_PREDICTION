@@ -1,0 +1,69 @@
+{
+  "created_at": "2026-09-28T20:47:18.617149",
+  "competition": "Playground Series S6E9",
+  "metric": "ROC-AUC",
+  "cv": {
+    "method": "StratifiedKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "experiments": [
+    {
+      "id": "EXP_000_BASELINE",
+      "model": "CatBoost",
+      "oof_auc": 0.9415816807513815,
+      "notes": "Raw numerical + categorical features, ID excluded"
+    },
+    {
+      "id": "EXP_000_LGB",
+      "model": "LightGBM",
+      "oof_auc": 0.9418317605389006,
+      "notes": "Raw features, 31 leaves"
+    },
+    {
+      "id": "EXP_000_XGB_DEPTH6",
+      "model": "XGBoost",
+      "oof_auc": 0.9418760513579997,
+      "notes": "Depth 6 baseline"
+    },
+    {
+      "id": "EXP_000_XGB_DEPTH4",
+      "model": "XGBoost",
+      "oof_auc": 0.942026,
+      "notes": "Depth 4, min_child_weight 3"
+    },
+    {
+      "id": "EXP_000_BLEND_50_50",
+      "model": "LightGBM + XGBoost",
+      "oof_auc": 0.9420026857448622,
+      "public_auc": 0.9417,
+      "notes": "50/50 LGB + XGB"
+    },
+    {
+      "id": "EXP_000_BLEND_LGB30_XGB20_DEPTH4_50",
+      "model": "3-model blend",
+      "oof_auc": 0.942082,
+      "public_auc": 0.94185,
+      "notes": "30/20/50"
+    },
+    {
+      "id": "EXP_000_BLEND_LGB36_XGB4_DEPTH4_60",
+      "model": "3-model blend",
+      "oof_auc": 0.942095772,
+      "public_auc": 0.94189,
+      "public_rank": 1819,
+      "notes": "Current public champion"
+    },
+    {
+      "id": "EXP_000_LGB63",
+      "model": "LightGBM",
+      "notes": "63-leaf experiment; previously rejected"
+    },
+    {
+      "id": "EXP_000_INCOME_REGIME",
+      "model": "Income regime feature",
+      "notes": "Previously investigated; redundant residual signal"
+    }
+  ]
+}

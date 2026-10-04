@@ -1,0 +1,46 @@
+{
+  "experiment": "EXP_008_INCOME_ABLATION",
+  "description": "Controlled ablation of income digit representations.",
+  "model": "LightGBM",
+  "lgb_params": {
+    "n_estimators": 2000,
+    "learning_rate": 0.03,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 0.0,
+    "objective": "binary",
+    "metric": "auc",
+    "max_bin": 4095,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": -1
+  },
+  "variants": {
+    "A_BASELINE": [],
+    "B_DIGIT6": [
+      "Income_Digit_6"
+    ],
+    "C_DIGIT5_6": [
+      "Income_Digit_5",
+      "Income_Digit_6"
+    ],
+    "D_ALL_DIGITS": [
+      "Income_Digit_1",
+      "Income_Digit_2",
+      "Income_Digit_3",
+      "Income_Digit_4",
+      "Income_Digit_5",
+      "Income_Digit_6"
+    ],
+    "E_LAST2_LAST3": [
+      "Income_Last2",
+      "Income_Last3"
+    ]
+  },
+  "cv_folds": 5,
+  "fold_random_state": 42,
+  "target_positive_rate": 0.17464500160768098
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "EXP_014_STRUCTURAL_INTERACTIONS",
+  "base": "EXP_013",
+  "new_features": [
+    "Subsidy_Range_ID",
+    "Subsidy_Env_ID",
+    "Range_Env_ID"
+  ],
+  "leakage_safe": true
+}

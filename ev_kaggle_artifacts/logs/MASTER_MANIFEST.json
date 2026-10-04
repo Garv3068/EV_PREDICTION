@@ -1,0 +1,48 @@
+{
+  "competition": "Playground Series S6E9 - Predicting Electric Vehicle Purchases",
+  "metric": "ROC-AUC",
+  "saved_at": "2026-09-28T20:25:23.024190",
+  "dataset": {
+    "train_rows": 668665,
+    "train_columns": 15,
+    "test_rows": 286571,
+    "test_columns": 14,
+    "positive_rate": 0.17464500160768098
+  },
+  "cv": {
+    "method": "StratifiedKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "models": {
+    "catboost": {
+      "oof_auc": 0.9415816807513815
+    },
+    "lightgbm": {
+      "oof_auc": 0.9418317605389006
+    },
+    "xgboost_depth6": {
+      "oof_auc": 0.9418760513579997
+    },
+    "xgboost_depth4": {
+      "oof_auc": 0.9420259023203956
+    }
+  },
+  "champion_blend": {
+    "lightgbm_weight": 0.36,
+    "xgboost_depth6_weight": 0.04,
+    "xgboost_depth4_weight": 0.6,
+    "oof_auc": 0.942095772260919,
+    "public_auc": 0.94189,
+    "public_rank": 1819
+  },
+  "prediction_checks": {
+    "test_rows": 286571,
+    "nan_count": 0,
+    "inf_count": 0,
+    "min": 9.804377283650847e-06,
+    "max": 0.9720683886925605,
+    "mean": 0.1746356502539525
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP_003_LGB_MAXBIN_2047",
+  "status": "completed",
+  "baseline_auc": 0.942821535,
+  "oof_auc": 0.9432721582493673,
+  "delta": 0.0004506232493672879,
+  "fold_scores": [
+    0.9422963685495163,
+    0.9430318734262269,
+    0.9441977165438956,
+    0.9435790105611402,
+    0.9432995444160398
+  ],
+  "max_bin": 2047,
+  "artifacts": {
+    "config": "config.json",
+    "oof": "oof.npy",
+    "test": "test.npy",
+    "fold_scores": "fold_scores.json",
+    "prediction_stats": "prediction_stats.json"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "experiment": "3_model_blend",
+  "weights": {
+    "lightgbm": 0.3,
+    "xgboost_original": 0.2,
+    "xgboost_depth4": 0.5
+  },
+  "components": {
+    "lightgbm_oof_auc": 0.9418317605389006,
+    "xgboost_original_oof_auc": 0.9418760513579997,
+    "xgboost_depth4_oof_auc": 0.9420259023203956
+  },
+  "blend_oof_auc": 0.9420817971447852,
+  "previous_champion": {
+    "weights": {
+      "lightgbm": 0.5,
+      "xgboost_original": 0.5
+    },
+    "oof_auc": 0.9420026857448622
+  },
+  "improvement_vs_champion": 7.91113999230042e-05,
+  "note": "Blend weights selected using the same OOF predictions used for evaluation; therefore blend AUC may be optimistically biased."
+}

@@ -1,0 +1,7 @@
+{
+  "experiment": "EXP_013_INCOME_LAST3_FREQUENCY",
+  "feature_count": 33,
+  "new_feature": "Income_Last3_Frequency",
+  "frequency_source": "training_set_only",
+  "leakage_safe": true
+}

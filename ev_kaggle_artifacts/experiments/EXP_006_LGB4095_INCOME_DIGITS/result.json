@@ -1,0 +1,37 @@
+{
+  "experiment_id": "EXP_006_LGB4095_INCOME_DIGITS",
+  "status": "completed",
+  "baseline_auc": 0.943597125,
+  "oof_auc": 0.9443060522839853,
+  "delta": 0.0007089272839853056,
+  "fold_scores": [
+    0.9431811004227473,
+    0.9441070785869085,
+    0.945241520970532,
+    0.9446494470383878,
+    0.944397342589121
+  ],
+  "parameters": {
+    "max_bin": 4095,
+    "num_leaves": 31,
+    "learning_rate": 0.03,
+    "n_estimators": 2000
+  },
+  "features_added": [
+    "Income_Digit_1",
+    "Income_Digit_2",
+    "Income_Digit_3",
+    "Income_Digit_4",
+    "Income_Digit_5",
+    "Income_Digit_6",
+    "Income_Last2",
+    "Income_Last3"
+  ],
+  "artifacts": {
+    "config": "config.json",
+    "oof": "oof.npy",
+    "test": "test.npy",
+    "fold_scores": "fold_scores.json",
+    "prediction_stats": "prediction_stats.json"
+  }
+}

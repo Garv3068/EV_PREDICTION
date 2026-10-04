@@ -1,0 +1,19 @@
+{
+  "experiment": "EXP_007_INCOME_DIGIT_ANALYSIS",
+  "type": "diagnostic_only",
+  "model_training": false,
+  "rows": 668665,
+  "positive_rate": 0.17464500160768098,
+  "features": [
+    "Income_Digit_1",
+    "Income_Digit_2",
+    "Income_Digit_3",
+    "Income_Digit_4",
+    "Income_Digit_5",
+    "Income_Digit_6",
+    "Income_Last2",
+    "Income_Last3"
+  ],
+  "best_feature": "Income_Digit_6",
+  "best_directional_auc": 0.6110760864351286
+}

@@ -1,0 +1,10 @@
+{
+  "experiment_id": "EXP_002_MAXBIN_COMPLEMENTARITY",
+  "champion_auc": 0.942095772260919,
+  "maxbin1023_auc": 0.9428215346190116,
+  "prediction_correlation": 0.996031673411169,
+  "best_champion_weight": 0.1,
+  "best_maxbin1023_weight": 0.9,
+  "best_blend_auc": 0.9428312558088374,
+  "best_delta": 0.0007354835479184141
+}

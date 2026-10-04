@@ -1,0 +1,8 @@
+{
+  "experiment": "EXP_015_XGB_EXP013_FEATURES",
+  "exp014_weight": 0.6,
+  "exp015_weight": 0.4,
+  "oof_auc": 0.9445073803242342,
+  "prediction_correlation": 0.9959752283955837,
+  "delta_vs_exp014": 0.00014000276456860306
+}

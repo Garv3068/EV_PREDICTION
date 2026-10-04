@@ -1,0 +1,72 @@
+{
+  "model": "XGBoost",
+  "experiment": "depth4_minchild3",
+  "features": [
+    "Age",
+    "Annual_Income_USD",
+    "Daily_Commute_km",
+    "Number_of_Cars_Owned",
+    "Charging_Stations_Near_Home",
+    "Charging_Stations_Near_Work",
+    "Environmental_Concern_Level",
+    "Gender_Female",
+    "Gender_Male",
+    "Gender_Other",
+    "City_Type_Rural",
+    "City_Type_Suburban",
+    "City_Type_Urban",
+    "Current_Car_Type_Hatchback",
+    "Current_Car_Type_SUV",
+    "Current_Car_Type_Sedan",
+    "Current_Car_Type_Truck",
+    "Home_Charging_Possible_No",
+    "Home_Charging_Possible_Yes",
+    "Subsidy_Available_No",
+    "Subsidy_Available_Yes",
+    "Range_Anxiety_Level_High",
+    "Range_Anxiety_Level_Low",
+    "Range_Anxiety_Level_Medium"
+  ],
+  "n_features": 24,
+  "n_rows": 668665,
+  "params": {
+    "n_estimators": 2500,
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "min_child_weight": 3,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "tree_method": "hist",
+    "device": "cpu",
+    "random_state": 42,
+    "n_jobs": -1,
+    "early_stopping_rounds": 100
+  },
+  "cv": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "fold_auc": [
+    0.940761,
+    0.941791,
+    0.943062,
+    0.942604,
+    0.941956
+  ],
+  "oof_auc": 0.942026,
+  "original_xgb_auc": 0.941876,
+  "original_champion_auc": 0.942003,
+  "blend_results": {
+    "champion_95_new5": 0.942015,
+    "champion_90_new10": 0.942027,
+    "champion_85_new15": 0.942037,
+    "champion_80_new20": 0.942046,
+    "champion_75_new25": 0.942053,
+    "champion_70_new30": 0.94206
+  }
+}

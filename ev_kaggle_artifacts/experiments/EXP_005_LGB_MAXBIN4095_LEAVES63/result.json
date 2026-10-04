@@ -1,0 +1,32 @@
+{
+  "experiment_id": "EXP_005_LGB_MAXBIN4095_LEAVES63",
+  "status": "completed",
+  "baseline_auc": 0.943597125,
+  "oof_auc": 0.9433620397742384,
+  "delta": -0.00023508522576165536,
+  "fold_scores": [
+    0.9422249516762466,
+    0.9432941366626945,
+    0.9443815935402932,
+    0.9435653284525393,
+    0.9433840824070825
+  ],
+  "parameters": {
+    "max_bin": 4095,
+    "num_leaves": 63,
+    "learning_rate": 0.03,
+    "n_estimators": 2000,
+    "max_depth": -1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 0.0
+  },
+  "artifacts": {
+    "config": "config.json",
+    "oof": "oof.npy",
+    "test": "test.npy",
+    "fold_scores": "fold_scores.json",
+    "prediction_stats": "prediction_stats.json"
+  }
+}
